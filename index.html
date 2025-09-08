@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DevQuartet — Our Team</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Company Info Box -->
+  <header class="site-header">
+    <div class="container">
+      <div class="info-box" role="region" aria-labelledby="company-title">
+        <h1 id="company-title">DevQuartet</h1>
+        <p class="tagline">We build fast, accessible, and scalable web apps.</p>
+        <p class="blurb">
+          DevQuartet is a four-developer collective specializing in modern JavaScript, cloud-ready backends,
+          and UX that feels effortless. We partner with startups and NGOs to ship value quickly.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container" aria-labelledby="team-title">
+      <h2 id="team-title">Meet the Developers</h2>
+
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <img src="Bilder/Haifa.png" alt="Portrait of Haifa BAmehriz, Frontend Developer" class="avatar" />
+          <h3 class="name">Haifa Bamehriz</h3>
+          <p class="role">Frontend Developer • React & Accessibility</p>
+          <p class="bio">
+            Crafts clean UIs with attention to detail. Loves design systems, a11y, and performance budgets.
+          </p>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <img src="bilder/fiorella.png" alt="Portrait of Fiorella Di Giulio, front end Developer" class="avatar" />
+          <h3 class="name">Fiorella Di Giulio</h3>
+          <p class="role">Front end • Node, Next.js, PostgreSQL</p>
+          <p class="bio">
+            Jag har ett starkt intresse för att kombinera kreativitet, teknik och analys.
+          </p>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <img src="bilder/zaida.png" alt="Portrait of Zaidas, Full-stack developer" class="avatar" />
+        <h3 class="name">Zaidas Wiss</h3>
+          <p class="role">Full-stack developer</p>
+          <p class="bio">
+           Älskar att strukturera och vara kreativ, både med det du ser på skärmen, men även kopplingarna bakom.
+          </p>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with contact info for each person -->
+  <footer class="site-footer">
+    <div class="container">
+      <h2 class="visually-hidden">Contact the Team</h2>
+      <ul class="contacts">
+        <li>
+          <strong>Haifa Bamehriz</strong><br>
+          <a href="mailto:haifa.bamehriz@chasacademy.se">mailto:haifa.bamehriz@chasacademy.se</a> ·
+          <a href="tel:+46 073 191 33 57">+46 22 333 4454 </a>
+        </li>
+        <li>
+          <strong>Fiorella Digiluio</strong><br>
+          <a href="mailto:fiorella.digiulio@chasacademy.se">mailto:fiorella.digiulio@chasacademy.se</a> ·
+          <a href="tel:+46111222334">+46 11 122 2334</a>
+        </li>
+        <li>
+          <strong>Zaida Wiss</strong><br>
+          <a href="mailto:zaida.wiss@chasacademy.se">mailto:zaida.wiss@chasacademy.se</a> ·
+          <a href="tel:+46111222335">+46 11 122 2335</a>
+        </li>
+        <li>
+          <strong>Agnes Varlund</strong><br>
+          <a href="mailto:agnes.varnlund@chasacademy.se">agnes.varnlund@chasacademy.se</a> ·
+          <a href="tel:+46111222336">+46 11 122 2336</a>
+        </li>
+      </ul>
+
+      <p class="fineprint">© <span id="year"></span> DevQuartet. All rights reserved.</p>
+    </div>
+
+    <script>
+      // small helper for current year in footer
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
